@@ -1,12 +1,10 @@
 import os
-from google.cloud import texttospeech
 from flask import Flask, render_template, request, redirect
 from PyPDF2 import PdfReader
 from classes import *
 
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "cohesive-armor-381212-0b44764aae31.json"
-client = texttospeech.TextToSpeechClient()
 
 
 ENGLISH = {

@@ -1,3 +1,5 @@
+from google.cloud import texttospeech
+client = texttospeech.TextToSpeechClient()
 def pdf_to_mp3(text_input, voice_name, language):
 
     synthesis_input = texttospeech.SynthesisInput(text=text_input)
