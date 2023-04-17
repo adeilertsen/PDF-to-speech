@@ -1,4 +1,7 @@
+import os
 from google.cloud import texttospeech
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "cohesive-armor-381212-0b44764aae31.json"
 client = texttospeech.TextToSpeechClient()
 def pdf_to_mp3(text_input, voice_name, language):
 
