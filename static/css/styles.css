@@ -1,0 +1,30 @@
+
+
+.logo {
+    padding: 15% 0 2.5rem;
+}
+
+.main {
+    padding-top: 5rem;
+}
+.main-box {
+    border: thin solid #c2d0c8;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color: black;
+}
+
+.main-box h4 {
+    margin-top: 1rem;
+    size: 24;
+}
+
+.lang-img {
+    width: 30%;
+    margin-top: 1.5rem;
+}
+
+.footer {
+    background-color: #1ecbe1;
+    height: 10rem;
+}

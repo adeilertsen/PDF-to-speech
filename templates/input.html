@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+
+<body>
+<div class="container main ">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-6">
+      <form action="input" method="POST" enctype="multipart/form-data">
+      <!--
+      <label for="text" class="form-label">Text input:</label>
+      <textarea class="form-control" id="text"  name="text" rows="3"></textarea>
+      -->
+
+      <label for="formFile" class="form-label">PDF file:</label>
+      <input class="form-control" type="file" accept=".pdf" name="file" id="formFile">
+
+
+        <input class="btn btn-primary " type="submit" value="Submit">
+
+      </form>
+  </div>
+</div>
+</div>
+
+</body>
+{% include "footer.html" %}
+</html>

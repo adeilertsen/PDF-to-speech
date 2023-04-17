@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+<body>
+<div class="container main">
+    <div class="row text-center ">
+        {% for voice in range(4) %}
+        <div class="col-lg-3">
+            <a href="{{ url_for('input', voice=data['voices'][voice]) }}" class="main-box btn btn-outline-info">
+                {% if data['gender'][voice] == "female" %}
+                <img class="lang-img" src="{{ url_for('static', filename='/img/woman.png') }}">
+                {% else %}
+                <img class="lang-img" src="{{ url_for('static', filename='/img/man.png') }}">
+                {% endif %}
+                <audio controls src="{{ url_for('static', filename=data['samples'][voice]) }}"></audio>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+{% include "footer.html" %}
+</html>
